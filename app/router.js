@@ -7,6 +7,11 @@ const Router = EmberRouter.extend({
 });
 
 Router.map(function() {
+  this.route('admin', function() {
+    this.route('categories');
+    this.route('products');
+  });
+  this.route('checkout');
 });
 
 export default Router;
